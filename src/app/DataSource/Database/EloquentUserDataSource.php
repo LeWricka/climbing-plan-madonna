@@ -2,14 +2,14 @@
 
 namespace App\DataSource\Database;
 
-use App\Models\User;
+use App\Models\LaravelUser;
 use Exception;
 
 class EloquentUserDataSource
 {
-    public function findByEmail($email): User
+    public function findByEmail($email): LaravelUser
     {
-        $user = User::query()->where('email', $email)->first();
+        $user = LaravelUser::query()->where('email', $email)->first();
         if (is_null($user)) {
             throw new Exception('User not found');
         }

@@ -3,7 +3,7 @@
 namespace Tests\Integration\DataSources;
 
 use App\DataSource\Database\EloquentUserDataSource;
-use App\Models\User;
+use App\Models\LaravelUser;
 use Exception;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -17,12 +17,12 @@ class EloquentUserDataSourceTest extends TestCase
      */
     public function findsUserByEmail()
     {
-        User::factory(User::class)->create();
+        LaravelUser::factory(LaravelUser::class)->create();
         $eloquentUserDataSource = new EloquentUserDataSource();
 
         $user = $eloquentUserDataSource->findByEmail('email@email.com');
 
-        $this->assertInstanceOf(User::class, $user);
+        $this->assertInstanceOf(LaravelUser::class, $user);
     }
 
     /**
@@ -42,7 +42,7 @@ class EloquentUserDataSourceTest extends TestCase
      */
     public function noUserIsFoundForTheGivenEmailII()
     {
-        User::factory(User::class)->create();
+        LaravelUser::factory(LaravelUser::class)->create();
         $eloquentUserDataSource = new EloquentUserDataSource();
 
         try {
