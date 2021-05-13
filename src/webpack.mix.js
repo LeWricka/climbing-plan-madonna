@@ -11,10 +11,6 @@ const mix = require('laravel-mix');
  |
  */
 
-// mix.js('resources/js/app.js', 'public/js')
-//     .postCss('resources/css/app.css', 'public/css', [
-//         //
-//     ]);
 mix.sass('resources/sass/main.scss', 'public/css/oneui.css')
     .sass('resources/sass/oneui/themes/amethyst.scss', 'public/css/themes/')
     .sass('resources/sass/oneui/themes/city.scss', 'public/css/themes/')
