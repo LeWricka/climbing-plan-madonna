@@ -20,6 +20,7 @@ Route::get('/', function () {
 // Example Routes
 Route::view('/landing', 'landing');
 Route::view('/login', 'pages.login');
+Route::view('/main','pages.mainCalendar');
 
 Route::match(['get', 'post'], '/dashboard', function(){
     return view('dashboard');
