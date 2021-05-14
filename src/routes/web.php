@@ -23,6 +23,7 @@ Route::get('/users', UserController::class);
 
 // Example Routes
 Route::view('/landing', 'landing');
+Route::view('/login', 'pages.login');
 
 Route::match(['get', 'post'], '/dashboard', function () {
     return view('dashboard');
