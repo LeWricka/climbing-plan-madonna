@@ -881,7 +881,7 @@ DataTable.ext.buttons.copyHtml5 = {
 		textarea[0].focus();
 		textarea[0].select();
 
-		// Event to hide the message when the user is done
+		// Routine to hide the message when the user is done
 		var container = $(message).closest('.dt-button-info');
 		var close = function () {
 			container.off( 'click.buttons-copy' );
@@ -1181,13 +1181,13 @@ DataTable.ext.buttons.excelHtml5 = {
 			addRow( data.header, rowPos );
 			$('row:last c', rels).attr( 's', '2' ); // bold
 		}
-	
+
 		dataStartRow = rowPos;
 
 		for ( var n=0, ie=data.body.length ; n<ie ; n++ ) {
 			addRow( data.body[n], rowPos );
 		}
-	
+
 		dataEndRow = rowPos;
 
 		if ( config.footer && data.footer ) {

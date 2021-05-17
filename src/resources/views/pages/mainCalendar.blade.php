@@ -1925,7 +1925,6 @@ MAIN CONTENT LAYOUT
                         <div class="col-md-8 col-lg-7 col-xl-9">
                             <!-- Calendar Container -->
                             <div id="js-calendar"></div>
-                            <div id="js-events" class="list list-events"></div>
                         </div>
 
 
@@ -2064,8 +2063,9 @@ MAIN CONTENT LAYOUT
 
 <!-- Page JS Code -->
 <script>
-    var appSettings = {events :[{!! implode(",",$events) !!}]};
+    var appSettings = {routines :{!! json_encode($routines) !!}};
 </script>
+
 <script src="{{asset('js/pages/calendar.min.js')}}"></script>
 
 </body>
