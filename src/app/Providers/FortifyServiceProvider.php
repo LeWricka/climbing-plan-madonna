@@ -15,6 +15,15 @@ use Laravel\Fortify\Fortify;
 
 class FortifyServiceProvider extends ServiceProvider
 {
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
 
     /**
      * Bootstrap any application services.
@@ -27,6 +36,8 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::updateUserProfileInformationUsing(UpdateUserProfileInformation::class);
         Fortify::updateUserPasswordsUsing(UpdateUserPassword::class);
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
+
+
 
         RateLimiter::for('login', function (Request $request) {
             return Limit::perMinute(5)->by($request->email . $request->ip());
@@ -41,7 +52,7 @@ class FortifyServiceProvider extends ServiceProvider
         });
 
         Fortify::authenticateUsing(function (Request $request) {
-            $user = new User("user@gmail.com","a");
+            $user = new User(["user@gmail.com","a"]);
 
             if($request->email === "user@gmail.com" && $request->password === "a" ){
                 return $user;

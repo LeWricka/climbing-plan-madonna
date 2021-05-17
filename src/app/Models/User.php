@@ -2,34 +2,36 @@
 
 namespace App\Models;
 
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    private string $email;
-    private String $password;
 
-    public function __construct(string $email, string $password)
-    {
-        $this->$email = $email;
-        $this->$password = $password;
+    use HasFactory, Notifiable;
 
-    }
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'email',
+        'password',
+    ];
 
-    public function getEmail(): string
-    {
-        return $this->name;
-    }
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
 
-    public function setEmail(string $name): void
-    {
-        $this->name = $name;
-    }
-
-    public function setPassword(String $start): void
-    {
-        $this->start = $start;
-    }
 
 }
 
