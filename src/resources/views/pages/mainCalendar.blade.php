@@ -1679,35 +1679,6 @@ MAIN CONTENT LAYOUT
                 </button>
                 <!-- END Toggle Mini Sidebar -->
 
-                <!-- Apps Modal -->
-                <!-- Opens the Apps modal found at the bottom of the page, after footer’s markup -->
-                <button type="button" class="btn btn-sm btn-dual mr-2" data-toggle="modal"
-                        data-target="#one-modal-apps">
-                    <i class="fa fa-fw fa-cubes"></i>
-                </button>
-                <!-- END Apps Modal -->
-
-                <!-- Open Search Section (visible on smaller screens) -->
-                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                <button type="button" class="btn btn-sm btn-dual d-md-none" data-toggle="layout"
-                        data-action="header_search_on">
-                    <i class="fa fa-fw fa-search"></i>
-                </button>
-                <!-- END Open Search Section -->
-
-                <!-- Search Form (visible on larger screens) -->
-                <form class="d-none d-md-inline-block" action="be_pages_generic_search.html" method="POST">
-                    <div class="input-group input-group-sm">
-                        <input type="text" class="form-control form-control-alt" placeholder="Search.."
-                               id="page-header-search-input2" name="page-header-search-input2">
-                        <div class="input-group-append">
-                                    <span class="input-group-text bg-body border-0">
-                                        <i class="fa fa-fw fa-search"></i>
-                                    </span>
-                        </div>
-                    </div>
-                </form>
-                <!-- END Search Form -->
             </div>
             <!-- END Left Section -->
 
@@ -1758,102 +1729,9 @@ MAIN CONTENT LAYOUT
                 </div>
                 <!-- END User Dropdown -->
 
-                <!-- Notifications Dropdown -->
-                <div class="dropdown d-inline-block ml-2">
-                    <button type="button" class="btn btn-sm btn-dual" id="page-header-notifications-dropdown"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-fw fa-bell"></i>
-                        <span class="text-primary">•</span>
-                    </button>
-                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0 border-0 font-size-sm"
-                         aria-labelledby="page-header-notifications-dropdown">
-                        <div class="p-2 bg-primary-dark text-center rounded-top">
-                            <h5 class="dropdown-header text-uppercase text-white">Notifications</h5>
-                        </div>
-                        <ul class="nav-items mb-0">
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-check-circle text-success"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">You have a new follower</div>
-                                        <span class="font-w500 text-muted">15 min ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-plus-circle text-primary"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">1 new sale, keep it up</div>
-                                        <span class="font-w500 text-muted">22 min ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-times-circle text-danger"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">Update failed, restart server</div>
-                                        <span class="font-w500 text-muted">26 min ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-plus-circle text-primary"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">2 new sales, keep it up</div>
-                                        <span class="font-w500 text-muted">33 min ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-user-plus text-success"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">You have a new subscriber</div>
-                                        <span class="font-w500 text-muted">41 min ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="text-dark media py-2" href="javascript:void(0)">
-                                    <div class="mr-2 ml-3">
-                                        <i class="fa fa-fw fa-check-circle text-success"></i>
-                                    </div>
-                                    <div class="media-body pr-2">
-                                        <div class="font-w600">You have a new follower</div>
-                                        <span class="font-w500 text-muted">42 min ago</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="p-2 border-top">
-                            <a class="btn btn-sm btn-light btn-block text-center" href="javascript:void(0)">
-                                <i class="fa fa-fw fa-arrow-down mr-1"></i> Load More..
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!-- END Notifications Dropdown -->
 
-                <!-- Toggle Side Overlay -->
-                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
-                <button type="button" class="btn btn-sm btn-dual ml-2" data-toggle="layout"
-                        data-action="side_overlay_toggle">
-                    <i class="fa fa-fw fa-list-ul fa-flip-horizontal"></i>
-                </button>
-                <!-- END Toggle Side Overlay -->
+
+
             </div>
             <!-- END Right Section -->
         </div>
@@ -1941,13 +1819,9 @@ MAIN CONTENT LAYOUT
     <footer id="page-footer" class="bg-body-light">
         <div class="content py-3">
             <div class="row font-size-sm">
-                <div class="col-sm-6 order-sm-2 py-1 text-center text-sm-right">
-                    Crafted with <i class="fa fa-heart text-danger"></i> by <a class="font-w600"
-                                                                               href="https://1.envato.market/ydb"
-                                                                               target="_blank">pixelcave</a>
-                </div>
+
                 <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
-                    <a class="font-w600" href="https://1.envato.market/AVD6j" target="_blank">OneUI 4.9</a> &copy; <span
+                    <a class="font-w600" href="#" target="_blank">ClimbingPlan</a> &copy; <span
                         data-toggle="year-copy"></span>
                 </div>
             </div>
@@ -2063,10 +1937,13 @@ MAIN CONTENT LAYOUT
 
 <!-- Page JS Code -->
 <script>
-    var appSettings = {routines :{!! json_encode($routines) !!}};
+    var appSettings = {routines :{!! json_encode($routines ?? '') !!}};
 </script>
 
 <script src="{{asset('js/pages/calendar.min.js')}}"></script>
+<script>
+    document.getElementsByClassName("fc-daygrid-day fc-day fc-day-thu fc-day-past").onclick = function(){alert("clicked")};
+</script>
 
 </body>
 </html>
