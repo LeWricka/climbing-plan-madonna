@@ -88,7 +88,7 @@ MAIN CONTENT LAYOUT
         <div class="content-header border-bottom">
             <!-- User Avatar -->
             <a class="img-link mr-1" href="javascript:void(0)">
-                <img class="img-avatar img-avatar32" src="" alt="">
+                <img class="img-avatar img-avatar32" src="{{asset('media/avatars/avatar10.jpg')}}" alt="">
             </a>
             <!-- END User Avatar -->
 
@@ -206,7 +206,7 @@ MAIN CONTENT LAYOUT
                                     <li>
                                         <a class="media py-2" href="javascript:void(0)">
                                             <div class="mr-3 ml-2 overlay-container overlay-bottom">
-                                                <img class="img-avatar img-avatar48" src="" alt="">
+                                                <img class="img-avatar img-avatar48" src="{{asset('media/avatars/avatar6.jpg')}}" alt="">
                                                 <span
                                                     class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
                                             </div>
@@ -219,7 +219,7 @@ MAIN CONTENT LAYOUT
                                     <li>
                                         <a class="media py-2" href="javascript:void(0)">
                                             <div class="mr-3 ml-2 overlay-container overlay-bottom">
-                                                <img class="img-avatar img-avatar48" src="" alt="">
+                                                <img class="img-avatar img-avatar48" src="{{asset('media/avatars/avatar12.jpg')}}" alt="">
                                                 <span
                                                     class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
                                             </div>
@@ -232,7 +232,7 @@ MAIN CONTENT LAYOUT
                                     <li>
                                         <a class="media py-2" href="javascript:void(0)">
                                             <div class="mr-3 ml-2 overlay-container overlay-bottom">
-                                                <img class="img-avatar img-avatar48" src="" alt="">
+                                                <img class="img-avatar img-avatar48" src="{{asset('media/avatars/avatar6.jpg')}}" alt="">
                                                 <span
                                                     class="overlay-item item item-tiny item-circle border border-2x border-white bg-success"></span>
                                             </div>
@@ -245,7 +245,7 @@ MAIN CONTENT LAYOUT
                                     <li>
                                         <a class="media py-2" href="javascript:void(0)">
                                             <div class="mr-3 ml-2 overlay-container overlay-bottom">
-                                                <img class="img-avatar img-avatar48" src="" alt="">
+                                                <img class="img-avatar img-avatar48" src="{{asset('media/avatars/avatar7.jpg')}}" alt="">
                                                 <span
                                                     class="overlay-item item item-tiny item-circle border border-2x border-white bg-warning"></span>
                                             </div>
@@ -258,7 +258,7 @@ MAIN CONTENT LAYOUT
                                     <li>
                                         <a class="media py-2" href="javascript:void(0)">
                                             <div class="mr-3 ml-2 overlay-container overlay-bottom">
-                                                <img class="img-avatar img-avatar48" src="" alt="">
+                                                <img class="img-avatar img-avatar48" src="{{asset('media/avatars/avatar10.jpg')}}" alt="">
                                                 <span
                                                     class="overlay-item item item-tiny item-circle border border-2x border-white bg-warning"></span>
                                             </div>
@@ -1718,14 +1718,14 @@ MAIN CONTENT LAYOUT
                     <button type="button" class="btn btn-sm btn-dual d-flex align-items-center"
                             id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true"
                             aria-expanded="false">
-                        <img class="rounded-circle" src="" alt="Header Avatar" style="width: 21px;">
+                        <img class="rounded-circle" src="{{asset('media/avatars/avatar10.jpg')}}" alt="Header Avatar" style="width: 21px;">
                         <span class="d-none d-sm-inline-block ml-2">Adam</span>
                         <i class="fa fa-fw fa-angle-down d-none d-sm-inline-block ml-1 mt-1"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-md dropdown-menu-right p-0 border-0"
                          aria-labelledby="page-header-user-dropdown">
                         <div class="p-3 text-center bg-primary-dark rounded-top">
-                            <img class="img-avatar img-avatar48 img-avatar-thumb" src="" alt="">
+                            <img class="img-avatar img-avatar48 img-avatar-thumb" src="{{asset('media/avatars/avatar10.jpg')}}" alt="">
                             <p class="mt-2 mb-0 text-white font-w500">Adam Smith</p>
                             <p class="mb-0 text-white-50 font-size-sm">Web Developer</p>
                         </div>

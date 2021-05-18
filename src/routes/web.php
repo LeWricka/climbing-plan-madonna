@@ -33,3 +33,4 @@ Route::view('/pages/datatables', 'pages.datatables');
 Route::view('/pages/blank', 'pages.blank');
 
 Route::get('/main', CalendarController::class);
+Route::view('/dailySchedule', 'pages.dailySchedule');
