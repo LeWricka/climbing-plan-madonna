@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>OneUI - Bootstrap 4 Admin Template &amp; UI Framework</title>
+    <title>ClimbingPlan</title>
 
     <meta name="description"
-          content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+          content="Best training programs">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework">
-    <meta property="og:site_name" content="OneUI">
+    <meta property="og:title" content="ClimbingPlan">
+    <meta property="og:site_name" content="ClimbingPlan">
     <meta property="og:description"
-          content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+          content="Best training programs">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -88,7 +88,7 @@
             <div class="hero-static col-lg-8 d-flex flex-column align-items-center bg-white">
                 <div class="p-3 w-100 d-lg-none text-center">
                     <a class="link-fx font-w600 font-size-h3 text-dark" href="index.html">
-                        One<span class="font-w400">UI</span>
+                        Climbing<span class="font-w400">Plan</span>
                     </a>
                 </div>
                 <div class="p-4 w-100 flex-grow-1 d-flex align-items-center">
@@ -173,7 +173,7 @@
                 <div
                     class="px-4 py-3 w-100 d-lg-none d-flex flex-column flex-sm-row justify-content-between font-size-sm text-center text-sm-left">
                     <p class="font-w500 text-black-50 py-2 mb-0">
-                        <strong>OneUI 4.9</strong> &copy; <span data-toggle="year-copy"></span>
+                        <strong>ClimbingPlan</strong> &copy; <span data-toggle="year-copy"></span>
                     </p>
                     <ul class="list list-inline py-2 mb-0">
                         <li class="list-inline-item">
@@ -190,7 +190,7 @@
             </div>
             <!-- END Main Section -->
         </div>
-</div>
+
 <!-- END Page Content -->
 </main>
 <!-- END Main Container -->
@@ -213,20 +213,6 @@
     assets/js/core/jquery.appear.min.js
     assets/js/core/js.cookie.min.js
 -->
-<script src="assets/js/oneui.core.min.js"></script>
 
-<!--
-    OneUI JS
-
-    Custom functionality including Blocks/Layout API as well as other vital and optional helpers
-    webpack is putting everything together at assets/_js/main/app.js
--->
-<script src="assets/js/oneui.app.min.js"></script>
-
-<!-- Page JS Plugins -->
-<script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
-
-<!-- Page JS Code -->
-<script src="assets/js/pages/op_auth_signin.min.js"></script>
 </body>
 </html>

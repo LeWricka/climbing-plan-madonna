@@ -20,9 +20,7 @@ Route::get('/', function () {
 // Example Routes
 Route::view('/landing', 'landing');
 
-
 Route::view('home', 'home')->name('home');
-
 
 Route::match(['get', 'post'], '/dashboard', function () {
     return view('dashboard');

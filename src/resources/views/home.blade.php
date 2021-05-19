@@ -1,6 +1,4 @@
-
-
-    @if (session('status'))
+ @if (session('status'))
         <div>{{ session('status') }}</div>
     @endif
 
