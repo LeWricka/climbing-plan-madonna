@@ -6,14 +6,16 @@
 
     <title>OneUI - Bootstrap 4 Admin Template &amp; UI Framework</title>
 
-    <meta name="description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta name="description"
+          content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
     <meta name="author" content="pixelcave">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
     <meta property="og:title" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework">
     <meta property="og:site_name" content="OneUI">
-    <meta property="og:description" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+    <meta property="og:description"
+          content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -34,7 +36,7 @@
     <!-- You can include a specific file from public/css/themes/ folder to alter the default color theme of the template. eg: -->
 <!-- <link rel="stylesheet" id="css-theme" href="{{ mix('/css/themes/amethyst.css') }}"> -->
 @yield('css_after')
-    <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+<!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/amethyst.min.css"> -->
     <!-- END Stylesheets -->
 </head>
@@ -83,10 +85,11 @@ MAIN CONTENT LAYOUT
     <!-- Main Container -->
     <main id="main-container">
         <!-- Page Content -->
-        <div class="bg-image" style="background-image: url({{('media/photos/leftSideImage.jpg')}});"/>
+        <div class="bg-image"
+             style="background-position: 0px 0px;background-size: cover; background-image: url({{('media/photos/leftSideImage.jpg')}});"/>
 
         <div class="row no-gutters">
-                <!-- Meta Info Section -->
+            <!-- Meta Info Section -->
             <div class="hero-static col-lg-4 d-none d-lg-flex flex-column justify-content-center">
                 <div class="p-4 p-xl-5 flex-grow-1 d-flex align-items-center">
                     <div class="w-100">
@@ -94,118 +97,157 @@ MAIN CONTENT LAYOUT
                             ClimbingPlan
                         </a>
                         <p class="text-white-75 mr-xl-8 mt-2">
-                            Improve your climbing with the best climbing trainning programs
+                            Improve your climbing with the best climbing training programs
                         </p>
                     </div>
                 </div>
-                    <div class="p-4 p-xl-5 d-xl-flex justify-content-between align-items-center font-size-sm">
-                        <p class="font-w500 text-white-50 mb-0">
-                            <strong>ClimbingPlan</strong> &copy; <span data-toggle="year-copy"></span>
-                        </p>
-                        <ul class="list list-inline mb-0 py-2">
-                            <li class="list-inline-item">
-                                <a class="text-white-75 font-w500" href="javascript:void(0)">Legal</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-white-75 font-w500" href="javascript:void(0)">Contact</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-white-75 font-w500" href="javascript:void(0)">Terms</a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="p-4 p-xl-5 d-xl-flex justify-content-between align-items-center font-size-sm">
+                    <p class="font-w500 text-white-50 mb-0">
+                        <strong>ClimbingPlan</strong> &copy; <span data-toggle="year-copy"></span>
+                    </p>
+                    <ul class="list list-inline mb-0 py-2">
+                        <li class="list-inline-item">
+                            <a class="text-white-75 font-w500" href="javascript:void(0)">Legal</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white-75 font-w500" href="javascript:void(0)">Contact</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-white-75 font-w500" href="javascript:void(0)">Terms</a>
+                        </li>
+                    </ul>
                 </div>
-                <!-- END Meta Info Section -->
+            </div>
+            <!-- END Meta Info Section -->
 
-                <!-- Main Section -->
-                <div class="hero-static col-lg-8 d-flex flex-column align-items-center bg-white">
-                    <div class="p-3 w-100 d-lg-none text-center">
-                        <a class="link-fx font-w600 font-size-h3 text-dark" href="index.html">
-                            Climbing<span class="font-w400">Plan</span>
-                        </a>
-                    </div>
-                    <div class="p-4 w-100 flex-grow-1 d-flex align-items-center">
-                        <div class="w-100">
-                            <!-- Header -->
-                            <div class="text-center mb-5">
-                                <p class="mb-3">
-                                    <i class="fa fa-2x fa-circle-notch text-primary-light"></i>
-                                </p>
-                                <h1 class="font-w700 mb-2">
-                                    Create Account
-                                </h1>
-                                <h2 class="font-size-base text-muted">
-                                    Get your access today in one easy step
-                                </h2>
-                            </div>
-                            <!-- END Header -->
+            <!-- Main Section -->
+            <div class="hero-static col-lg-8 d-flex flex-column align-items-center bg-white">
+                <div class="p-3 w-100 d-lg-none text-center">
+                    <a class="link-fx font-w600 font-size-h3 text-dark" href="index.html">
+                        Climbing<span class="font-w400">Plan</span>
+                    </a>
+                </div>
+                <div class="p-4 w-100 flex-grow-1 d-flex align-items-center">
+                    <div class="w-100">
+                        <!-- Header -->
+                        <div class="text-center mb-5">
+                            <p class="mb-3">
+                                <i class="fa fa-2x fa-circle-notch text-primary-light"></i>
+                            </p>
+                            <h1 class="font-w700 mb-2">
+                                Create Account
+                            </h1>
+                            <h2 class="font-size-base text-muted">
+                                Get your access today in one easy step
+                            </h2>
+                        </div>
+                        <!-- END Header -->
 
-                            <!-- Sign Up Form -->
-                            <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.min.js which was auto compiled from _js/pages/op_auth_signup.js) -->
-                            <!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                            <div class="row no-gutters justify-content-center">
-                                <div class="col-sm-8 col-xl-4">
-                                    <form action="{{ route('register') }}" method="POST">
+                        <!-- Sign Up Form -->
+                        <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.min.js which was auto compiled from _js/pages/op_auth_signup.js) -->
+                        <!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->
 
-                                        <div class="form-group">
-                                            <input type="email" class="form-control form-control-lg form-control-alt py-4" id="signup-email" name="signup-email" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-lg form-control-alt py-4" id="signup-password" name="signup-password" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="password" class="form-control form-control-lg form-control-alt py-4" id="signup-password-confirm" name="signup-password-confirm" placeholder="Confirm Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="d-md-flex align-items-md-center justify-content-md-between">
-                                                <div class="custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="signup-terms" name="signup-terms">
-                                                    <label class="custom-control-label font-w400" for="signup-terms">I agree to Terms &amp; Conditions</label>
-                                                </div>
-                                                <div class="py-2">
-                                                    <a class="font-size-sm font-w500" href="javascript:void(0)" data-toggle="modal" data-target="#one-signup-terms">View Terms</a>
-                                                </div>
+                        <div class="row no-gutters justify-content-center">
+                            <div class="col-sm-8 col-xl-4">
+
+                                <form method="POST" action="{{ route('register') }}">
+                                    @csrf
+
+                                    <div class="form-group">
+
+                                        <input id="email" type="email"
+                                               class="form-control form-control-lg form-control-alt  @error('email') is-invalid @enderror"
+                                               name="email" value="{{ old('email') }}" required
+                                               placeholder="Email"
+                                               autocomplete="email">
+
+                                        @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <input id="password" type="password"
+                                               class="form-control form-control-lg form-control-alt  @error('password') is-invalid @enderror"
+                                               name="password" placeholder="Password" required
+                                               autocomplete="new-password">
+
+                                        @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <input id="password-confirm" type="password"
+                                               class="form-control form-control-lg form-control-alt "
+                                               name="password_confirmation" placeholder="Confirm Password" required
+                                               autocomplete="new-password">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="d-md-flex align-items-md-center justify-content-md-between">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="signup-terms"
+                                                       name="signup-terms">
+                                                <label class="custom-control-label font-w400" for="signup-terms">I agree
+                                                    to Terms &amp; Conditions</label>
+                                            </div>
+                                            <div class="py-2">
+                                                <a class="font-size-sm font-w500" href="javascript:void(0)"
+                                                   data-toggle="modal" data-target="#one-signup-terms">View Terms</a>
                                             </div>
                                         </div>
-                                        <div class="form-group text-center mb-0">
-                                            <button type="submit" class="btn btn-lg btn-alt-success">
-                                                <i class="fa fa-fw fa-plus mr-1 opacity-50"></i> Sign Up
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
+                                    </div>
+
+                                    <div class="form-group text-center mb-0">
+                                        <button type="submit" class="btn btn-lg btn-alt-success">
+                                            <i class="fa fa-fw fa-plus mr-1 opacity-50"></i> Sign Up
+                                        </button>
+                                    </div>
+
+                                </form>
+
                             </div>
-                            <!-- END Sign Up Form -->
                         </div>
-                    </div>
-                    <div class="px-4 py-3 w-100 d-lg-none d-flex flex-column flex-sm-row justify-content-between font-size-sm text-center text-sm-left">
-                        <p class="font-w500 text-black-50 py-2 mb-0">
-                            <strong>ClimbingPlan</strong> &copy; <span data-toggle="year-copy"></span>
-                        </p>
-                        <ul class="list list-inline py-2 mb-0">
-                            <li class="list-inline-item">
-                                <a class="text-muted font-w500" href="javascript:void(0)">Legal</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-muted font-w500" href="javascript:void(0)">Contact</a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a class="text-muted font-w500" href="javascript:void(0)">Terms</a>
-                            </li>
-                        </ul>
+                        <!-- END Sign Up Form -->
                     </div>
                 </div>
-                <!-- END Main Section -->
+                <div
+                    class="px-4 py-3 w-100 d-lg-none d-flex flex-column flex-sm-row justify-content-between font-size-sm text-center text-sm-left">
+                    <p class="font-w500 text-black-50 py-2 mb-0">
+                        <strong>ClimbingPlan</strong> &copy; <span data-toggle="year-copy"></span>
+                    </p>
+                    <ul class="list list-inline py-2 mb-0">
+                        <li class="list-inline-item">
+                            <a class="text-muted font-w500" href="javascript:void(0)">Legal</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-muted font-w500" href="javascript:void(0)">Contact</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="text-muted font-w500" href="javascript:void(0)">Terms</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!-- END Main Section -->
         </div>
-        <!-- END Page Content -->
-    </main>
-    <!-- END Main Container -->
+</div>
+<!-- END Page Content -->
+</main>
+<!-- END Main Container -->
 </div>
 <!-- END Page Container -->
 
 <!-- Terms Modal -->
-<div class="modal fade" id="one-signup-terms" tabindex="-1" role="dialog" aria-labelledby="one-signup-terms" aria-hidden="true">
+<div class="modal fade" id="one-signup-terms" tabindex="-1" role="dialog" aria-labelledby="one-signup-terms"
+     aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-popout" role="document">
         <div class="modal-content">
             <div class="block block-rounded block-themed block-transparent mb-0">
@@ -218,11 +260,26 @@ MAIN CONTENT LAYOUT
                     </div>
                 </div>
                 <div class="block-content">
-                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
-                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
-                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
-                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
-                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
                 </div>
                 <div class="block-content block-content-full text-right border-top">
                     <button type="button" class="btn btn-alt-primary mr-1" data-dismiss="modal">Close</button>
@@ -250,20 +307,25 @@ MAIN CONTENT LAYOUT
     assets/js/core/jquery.appear.min.js
     assets/js/core/js.cookie.min.js
 -->
+<!--
 <script src="assets/js/oneui.core.min.js"></script>
-
+-->
 <!--
     OneUI JS
 
     Custom functionality including Blocks/Layout API as well as other vital and optional helpers
     webpack is putting everything together at assets/_js/main/app.js
 -->
+<!--
 <script src="assets/js/oneui.app.min.js"></script>
-
+-->
 <!-- Page JS Plugins -->
+<!--
 <script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
-
+-->
 <!-- Page JS Code -->
+<!--
 <script src="assets/js/pages/op_auth_signup.min.js"></script>
+-->
 </body>
 </html>
