@@ -1778,8 +1778,7 @@ MAIN CONTENT LAYOUT
                 <div class="d-flex flex-column flex-sm-row justify-content-sm-between align-items-sm-center">
                     <h1 class="flex-sm-fill h3 my-2">
                         Calendar <small
-                            class="d-block d-sm-inline-block mt-2 mt-sm-0 font-size-base font-w400 text-muted">A solid
-                            foundation to build your calendar based web application. Powered by Full Calendar.</small>
+                            class="d-block d-sm-inline-block mt-2 mt-sm-0 font-size-base font-w400 text-muted">"No Pain, More Gain"</small>
                     </h1>
                     <nav class="flex-sm-00-auto ml-sm-3" aria-label="breadcrumb">
                         <ol class="breadcrumb breadcrumb-alt">
@@ -1937,13 +1936,10 @@ MAIN CONTENT LAYOUT
 
 <!-- Page JS Code -->
 <script>
-    var appSettings = {routines :{!! json_encode($routines ?? '') !!}};
+    var routines = {!! json_encode($routines) !!};
 </script>
 
 <script src="{{asset('js/pages/calendar.min.js')}}"></script>
-<script>
-    document.getElementsByClassName("fc-daygrid-day fc-day fc-day-thu fc-day-past").onclick = function(){alert("clicked")};
-</script>
 
 </body>
 </html>
