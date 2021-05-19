@@ -5,10 +5,10 @@ namespace App\Models;
 
 class Routine
 {
-    private string $name;
+    private String $name;
     private String $start;
     private String $end;
-    private string $color;
+    private String $color;
 
     public function __construct(string $name, string $start, string $end, string $color)
     {

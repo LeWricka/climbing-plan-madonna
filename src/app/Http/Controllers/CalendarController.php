@@ -17,8 +17,8 @@ class CalendarController extends Controller
         $routine4 = new Routine("Final Routine","2021-05-22", "2021-05-24", "#e04f1a");
 
 
-        $routines = [];
-        array_push($routines,$routine1->routineToJson(), $routine2->routineToJson(), $routine3->routineToJson(), $routine4->routineToJson());
+        $routines = [$routine1->routineToJson(), $routine2->routineToJson(), $routine3->routineToJson(), $routine4->routineToJson()];
+
 
         return view('pages/mainCalendar', ['routines' => $routines]);
     }
