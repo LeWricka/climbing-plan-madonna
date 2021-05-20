@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <title>OneUI - Bootstrap 4 Admin Template &amp; UI Framework</title>
+    <title>BEST CLIMBING TRAINING PROGRAMS</title>
 
     <meta name="description"
           content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
@@ -12,10 +12,10 @@
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
-    <meta property="og:title" content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework">
-    <meta property="og:site_name" content="OneUI">
+    <meta property="og:title" content="ClimbingPlan">
+    <meta property="og:site_name" content="ClimbingPlan">
     <meta property="og:description"
-          content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
+          content="BEST CLIMBING TRAINING PROGRAMS">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="">
@@ -1803,8 +1803,6 @@ MAIN CONTENT LAYOUT
                             <!-- Calendar Container -->
                             <div id="js-calendar"></div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
