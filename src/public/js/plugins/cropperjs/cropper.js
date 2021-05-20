@@ -705,7 +705,7 @@
    */
 
   function dispatchEvent(element, type, data) {
-    var event; // Event and CustomEvent on IE9-11 are global objects, not constructors
+    var event; // Routine and CustomEvent on IE9-11 are global objects, not constructors
 
     if (isFunction(Event) && isFunction(CustomEvent)) {
       event = new CustomEvent(type, {

@@ -256,7 +256,7 @@ var FullCalendar = (function (exports) {
     function preventDefault(ev) {
         ev.preventDefault();
     }
-    // Event Delegation
+    // Routine Delegation
     // ----------------------------------------------------------------------------------------------------------------
     function buildDelegationHandler(selector, handler) {
         return function (ev) {
@@ -822,7 +822,7 @@ var FullCalendar = (function (exports) {
         return { defs: defs, instances: instances };
     }
     /*
-    Event MUST have a recurringDef
+    Routine MUST have a recurringDef
     */
     function expandRecurringRanges(eventDef, duration, framingRange, dateEnv, recurringTypes) {
         var typeDef = recurringTypes[eventDef.recurringDef.typeId];
@@ -3047,7 +3047,7 @@ var FullCalendar = (function (exports) {
             var dateEnv = this.getCurrentData().dateEnv;
             return dateEnv.formatIso(dateEnv.createMarker(d), { omitTime: omitTime });
         };
-        // Date Selection / Event Selection / DayClick
+        // Date Selection / Routine Selection / DayClick
         // -----------------------------------------------------------------------------------------------------------------
         // this public method receives start/end dates in any format, with any timezone
         // NOTE: args were changed from v3
@@ -3174,7 +3174,7 @@ var FullCalendar = (function (exports) {
         CalendarApi.prototype.removeAllEvents = function () {
             this.dispatch({ type: 'REMOVE_ALL_EVENTS' });
         };
-        // Public Event Sources API
+        // Public Routine Sources API
         // -----------------------------------------------------------------------------------------------------------------
         CalendarApi.prototype.getEventSources = function () {
             var state = this.getCurrentData();
@@ -5188,7 +5188,7 @@ var FullCalendar = (function (exports) {
         }
         return true;
     }
-    // Moving Event Validation
+    // Moving Routine Validation
     // ------------------------------------------------------------------------------------------------------------------------
     function isInteractionPropsValid(state, context, dateSpanMeta, filterConfig) {
         var currentState = context.getCurrentData();
@@ -6736,7 +6736,7 @@ var FullCalendar = (function (exports) {
         var endMarker = framingRange.end;
         var instanceStarts = [];
         while (dayMarker < endMarker) {
-            var instanceStart 
+            var instanceStart
             // if everyday, or this particular day-of-week
             = void 0;
             // if everyday, or this particular day-of-week
@@ -9337,7 +9337,7 @@ var FullCalendar = (function (exports) {
                 window.removeEventListener('scroll', this.handleScroll, true); // useCaptured=true
             }
         };
-        // Event Normalization
+        // Routine Normalization
         // ----------------------------------------------------------------------------------------------------
         PointerDragging.prototype.createEventFromMouse = function (ev, isFirst) {
             var deltaX = 0;
@@ -11912,7 +11912,7 @@ var FullCalendar = (function (exports) {
                     /*
                     known bug: events that are force to be list-item but span multiple days still take up space in later columns
                     */
-                    nodes.push(createElement("div", { className: 'fc-daygrid-event-harness' + (isAbsolute ? ' fc-daygrid-event-harness-abs' : ''), key: instanceId, 
+                    nodes.push(createElement("div", { className: 'fc-daygrid-event-harness' + (isAbsolute ? ' fc-daygrid-event-harness-abs' : ''), key: instanceId,
                         // in print mode when in mult cols, could collide
                         ref: isMirror ? null : this.segHarnessRefs.createRef(instanceId + ':' + seg.firstCol), style: {
                             visibility: isInvisible ? 'hidden' : '',
@@ -13219,7 +13219,7 @@ var FullCalendar = (function (exports) {
             if (!slatCoords) {
                 return null;
             }
-            return segs.map(function (seg, i) { return (createElement(NowIndicatorRoot, { isAxis: false, date: date, 
+            return segs.map(function (seg, i) { return (createElement(NowIndicatorRoot, { isAxis: false, date: date,
                 // key doesn't matter. will only ever be one
                 key: i }, function (rootElRef, classNames, innerElRef, innerContent) { return (createElement("div", { ref: rootElRef, className: ['fc-timegrid-now-indicator-line'].concat(classNames).join(' '), style: { top: slatCoords.computeDateTop(seg.start, date) } }, innerContent)); })); });
         };

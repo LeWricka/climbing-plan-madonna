@@ -1,7 +1,9 @@
 {
     "/js/laravel.app.js": "/js/laravel.app.js",
     "/js/oneui.app.js": "/js/oneui.app.js",
+    "/js/oneui.core.min.js": "/js/oneui.core.min.js",
     "/js/pages/tables_datatables.js": "/js/pages/tables_datatables.js",
+    "/js/pages/calendar.min.js": "/js/pages/calendar.min.js",
     "/css/themes/modern.css": "/css/themes/modern.css",
     "/css/themes/flat.css": "/css/themes/flat.css",
     "/css/themes/city.css": "/css/themes/city.css",

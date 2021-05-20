@@ -19,9 +19,13 @@ mix.sass('resources/sass/main.scss', 'public/css/oneui.css')
     .sass('resources/sass/oneui/themes/smooth.scss', 'public/css/themes/')
     .js('resources/js/app.js', 'public/js/laravel.app.js')
     .js('resources/js/oneui/app.js', 'public/js/oneui.app.js')
+    .js('resources/js/oneui/oneui.core.min.js', 'public/js/oneui.core.min.js')
+
+
 
     /* Page JS */
     .js('resources/js/pages/tables_datatables.js', 'public/js/pages/tables_datatables.js')
+    .js('resources/js/pages/calendar.min.js', 'public/js/pages/calendar.min.js')
 
     /* Tools */
     .browserSync('http://localhost:8088')

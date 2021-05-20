@@ -1026,7 +1026,7 @@ hljs.registerLanguage('1c', function(hljs){
 
   // общий паттерн для определения идентификаторов
   var UNDERSCORE_IDENT_RE = '[A-Za-zА-Яа-яёЁ_][A-Za-zА-Яа-яёЁ_0-9]+';
-  
+
   // v7 уникальные ключевые слова, отсутствующие в v8 ==> keyword
   var v7_keywords =
   'далее ';
@@ -1038,7 +1038,7 @@ hljs.registerLanguage('1c', function(hljs){
 
   // keyword : ключевые слова
   var KEYWORD = v7_keywords + v8_keywords;
-  
+
   // v7 уникальные директивы, отсутствующие в v8 ==> meta-keyword
   var v7_meta_keywords =
   'загрузитьизфайла ';
@@ -1055,7 +1055,7 @@ hljs.registerLanguage('1c', function(hljs){
   // v7 системные константы ==> built_in
   var v7_system_constants =
   'разделительстраниц разделительстрок символтабуляции ';
-  
+
   // v7 уникальные методы глобального контекста, отсутствующие в v8 ==> built_in
   var v7_global_context_methods =
   'ansitooem oemtoansi ввестивидсубконто ввестиперечисление ввестипериод ввестиплансчетов выбранныйплансчетов ' +
@@ -1069,7 +1069,7 @@ hljs.registerLanguage('1c', function(hljs){
   'префиксавтонумерации пропись пустоезначение разм разобратьпозициюдокумента рассчитатьрегистрына ' +
   'рассчитатьрегистрыпо симв создатьобъект статусвозврата стрколичествострок сформироватьпозициюдокумента ' +
   'счетпокоду текущеевремя типзначения типзначениястр установитьтана установитьтапо фиксшаблон шаблон ';
-  
+
   // v8 методы глобального контекста ==> built_in
   var v8_global_context_methods =
   'acos asin atan base64значение base64строка cos exp log log10 pow sin sqrt tan xmlзначение xmlстрока ' +
@@ -1164,7 +1164,7 @@ hljs.registerLanguage('1c', function(hljs){
   v7_system_constants +
   v7_global_context_methods + v8_global_context_methods +
   v8_global_context_property;
-  
+
   // v8 системные наборы значений ==> class
   var v8_system_sets_of_values =
   'webцвета windowsцвета windowsшрифты библиотекакартинок рамкистиля символы цветастиля шрифтыстиля ';
@@ -1316,7 +1316,7 @@ hljs.registerLanguage('1c', function(hljs){
   'кодировкаименфайловвzipфайле методсжатияzip методшифрованияzip режимвосстановленияпутейфайловzip режимобработкиподкаталоговzip ' +
   'режимсохраненияпутейzip уровеньсжатияzip ';
 
-  // v8 системные перечисления - 
+  // v8 системные перечисления -
   // Блокировка данных, Фоновые задания, Автоматизированное тестирование,
   // Доставляемые уведомления, Встроенные покупки, Интернет, Работа с двоичными данными ==> class
   var v8_system_enums_other =
@@ -1435,7 +1435,7 @@ hljs.registerLanguage('1c', function(hljs){
 
   // literal : примитивные типы
   var LITERAL = 'null истина ложь неопределено';
-  
+
   // number : числа
   var NUMBERS = hljs.inherit(hljs.NUMBER_MODE);
 
@@ -1456,10 +1456,10 @@ hljs.registerLanguage('1c', function(hljs){
       }
     ]
   };
-  
+
   // comment : комментарии
   var COMMENTS = hljs.inherit(hljs.C_LINE_COMMENT_MODE);
-  
+
   // meta : инструкции препроцессора, директивы компиляции
   var META = {
     className: 'meta',
@@ -1470,13 +1470,13 @@ hljs.registerLanguage('1c', function(hljs){
       COMMENTS
     ]
   };
-  
+
   // symbol : метка goto
   var SYMBOL = {
     className: 'symbol',
     begin: '~', end: ';|:', excludeEnd: true
-  };  
-  
+  };
+
   // function : объявление процедур и функций
   var FUNCTION = {
     className: 'function',
@@ -1528,7 +1528,7 @@ hljs.registerLanguage('1c', function(hljs){
       NUMBERS,
       STRINGS,
       DATE
-    ]  
+    ]
   }
 });
 
@@ -3153,7 +3153,7 @@ hljs.registerLanguage('autohotkey', function(hljs) {
         ]
       },
       {
-        className: 'meta', 
+        className: 'meta',
         begin: '^\\s*#\\w+', end:'$',
         relevance: 0
       },
@@ -17370,19 +17370,19 @@ hljs.registerLanguage('powershell', function(hljs){
         "Enable-ScheduledJob Enable-WSManCredSSP Enter-PSSession Exit-PSSession Export-Alias Export-Clixml Export-Console Export-Counter Export-Csv " +
         "Export-FormatData Export-ModuleMember Export-PSSession ForEach-Object Format-Custom Format-List Format-Table Format-Wide Get-Acl Get-Alias " +
         "Get-AuthenticodeSignature Get-ChildItem Get-Command Get-ComputerRestorePoint Get-Content Get-ControlPanelItem Get-Counter Get-Credential " +
-        "Get-Culture Get-Date Get-Event Get-EventLog Get-EventSubscriber Get-ExecutionPolicy Get-FormatData Get-Host Get-HotFix Get-Help Get-History " +
+        "Get-Culture Get-Date Get-Routine Get-EventLog Get-EventSubscriber Get-ExecutionPolicy Get-FormatData Get-Host Get-HotFix Get-Help Get-History " +
         "Get-IseSnippet Get-Item Get-ItemProperty Get-Job Get-JobTrigger Get-Location Get-Member Get-Module Get-PfxCertificate Get-Process " +
         "Get-PSBreakpoint Get-PSCallStack Get-PSDrive Get-PSProvider Get-PSSession Get-PSSessionConfiguration Get-PSSnapin Get-Random Get-ScheduledJob " +
         "Get-ScheduledJobOption Get-Service Get-TraceSource Get-Transaction Get-TypeData Get-UICulture Get-Unique Get-Variable Get-Verb Get-WinEvent " +
         "Get-WmiObject Get-WSManCredSSP Get-WSManInstance Group-Object Import-Alias Import-Clixml Import-Counter Import-Csv Import-IseSnippet " +
         "Import-LocalizedData Import-PSSession Import-Module Invoke-AsWorkflow Invoke-Command Invoke-Expression Invoke-History Invoke-Item " +
         "Invoke-RestMethod Invoke-WebRequest Invoke-WmiMethod Invoke-WSManAction Join-Path Limit-EventLog Measure-Command Measure-Object Move-Item " +
-        "Move-ItemProperty New-Alias New-Event New-EventLog New-IseSnippet New-Item New-ItemProperty New-JobTrigger New-Object New-Module " +
+        "Move-ItemProperty New-Alias New-Routine New-EventLog New-IseSnippet New-Item New-ItemProperty New-JobTrigger New-Object New-Module " +
         "New-ModuleManifest New-PSDrive New-PSSession New-PSSessionConfigurationFile New-PSSessionOption New-PSTransportOption " +
         "New-PSWorkflowExecutionOption New-PSWorkflowSession New-ScheduledJobOption New-Service New-TimeSpan New-Variable New-WebServiceProxy " +
         "New-WinEvent New-WSManInstance New-WSManSessionOption Out-Default Out-File Out-GridView Out-Host Out-Null Out-Printer Out-String Pop-Location " +
         "Push-Location Read-Host Receive-Job Register-EngineEvent Register-ObjectEvent Register-PSSessionConfiguration Register-ScheduledJob " +
-        "Register-WmiEvent Remove-Computer Remove-Event Remove-EventLog Remove-Item Remove-ItemProperty Remove-Job Remove-JobTrigger Remove-Module " +
+        "Register-WmiEvent Remove-Computer Remove-Routine Remove-EventLog Remove-Item Remove-ItemProperty Remove-Job Remove-JobTrigger Remove-Module " +
         "Remove-PSBreakpoint Remove-PSDrive Remove-PSSession Remove-PSSnapin Remove-TypeData Remove-Variable Remove-WmiObject Remove-WSManInstance " +
         "Rename-Computer Rename-Item Rename-ItemProperty Reset-ComputerMachinePassword Resolve-Path Restart-Computer Restart-Service Restore-Computer " +
         "Resume-Job Resume-Service Save-Help Select-Object Select-String Select-Xml Send-MailMessage Set-Acl Set-Alias Set-AuthenticodeSignature " +
@@ -17391,8 +17391,8 @@ hljs.registerLanguage('powershell', function(hljs){
         "Set-WSManInstance Set-WSManQuickConfig Show-Command Show-ControlPanelItem Show-EventLog Sort-Object Split-Path Start-Job Start-Process " +
         "Start-Service Start-Sleep Start-Transaction Start-Transcript Stop-Computer Stop-Job Stop-Process Stop-Service Stop-Transcript Suspend-Job " +
         "Suspend-Service Tee-Object Test-ComputerSecureChannel Test-Connection Test-ModuleManifest Test-Path Test-PSSessionConfigurationFile " +
-        "Trace-Command Unblock-File Undo-Transaction Unregister-Event Unregister-PSSessionConfiguration Unregister-ScheduledJob Update-FormatData " +
-        "Update-Help Update-List Update-TypeData Use-Transaction Wait-Event Wait-Job Wait-Process Where-Object Write-Debug Write-Error Write-EventLog " +
+        "Trace-Command Unblock-File Undo-Transaction Unregister-Routine Unregister-PSSessionConfiguration Unregister-ScheduledJob Update-FormatData " +
+        "Update-Help Update-List Update-TypeData Use-Transaction Wait-Routine Wait-Job Wait-Process Where-Object Write-Debug Write-Error Write-EventLog " +
         "Write-Host Write-Output Write-Progress Write-Verbose Write-Warning Add-MDTPersistentDrive Disable-MDTMonitorService Enable-MDTMonitorService " +
         "Get-MDTDeploymentShareStatistics Get-MDTMonitorData Get-MDTOperatingSystemCatalog Get-MDTPersistentDrive Import-MDTApplication " +
         "Import-MDTDriver Import-MDTOperatingSystem Import-MDTPackage Import-MDTTaskSequence New-MDTDatabase Remove-MDTMonitorData " +
