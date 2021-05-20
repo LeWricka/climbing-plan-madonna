@@ -1,7 +1,9 @@
 <?php
 
 namespace App\Models;
+
 use DateTime;
+
 class Routine
 {
     private string $name;
