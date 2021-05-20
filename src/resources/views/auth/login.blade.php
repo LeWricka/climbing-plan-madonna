@@ -61,7 +61,7 @@
                             ClimbingPlan
                         </a>
                         <p class="text-white-75 mr-xl-8 mt-2">
-                            Improve your climbing with the best climbing trainning programs
+                            Improve your climbing with the best climbing training programs
                         </p>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                                     <div class="form-group d-flex justify-content-between align-items-center">
                                         <div>
                                             <a class="text-muted font-size-sm font-w500 d-block d-lg-inline-block mb-1"
-                                               href="d.php">
+                                               href="/forgot-password">
                                                 Forgot Password?
                                             </a>
                                         </div>
