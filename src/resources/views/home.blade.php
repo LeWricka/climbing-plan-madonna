@@ -1,17 +1,15 @@
+@if (session('status'))
+    <div>{{ session('status') }}</div>
+@endif
 
+<div>You are logged in!</div>
 
-    @if (session('status'))
-        <div>{{ session('status') }}</div>
-    @endif
+<form method="POST" action="{{ route('logout') }}">
+    @csrf
 
-    <div>You are logged in!</div>
+    <button type="submit">
+        {{ __('Logout') }}
+    </button>
+</form>
 
-    <form method="POST" action="{{ route('logout') }}">
-        @csrf
-
-        <button type="submit">
-            {{ __('Logout') }}
-        </button>
-    </form>
-
-    <hr>
+<hr>
