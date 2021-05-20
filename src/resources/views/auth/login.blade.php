@@ -152,7 +152,7 @@
                                     <div class="form-group d-flex justify-content-between align-items-center">
                                         <div>
                                             <a class="text-muted font-size-sm font-w500 d-block d-lg-inline-block mb-1"
-                                               href="op_auth_reminder3.html">
+                                               href="d.php">
                                                 Forgot Password?
                                             </a>
                                         </div>
