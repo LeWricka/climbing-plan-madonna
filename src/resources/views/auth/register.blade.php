@@ -96,7 +96,7 @@ MAIN CONTENT LAYOUT
             <div class="hero-static col-lg-4 d-none d-lg-flex flex-column justify-content-center">
                 <div class="p-4 p-xl-5 flex-grow-1 d-flex align-items-center">
                     <div class="w-100">
-                        <a class="link-fx font-w600 font-size-h2 text-white" href="index.html">
+                        <a class="link-fx font-w600 font-size-h2 text-white" href="../">
                             ClimbingPlan
                         </a>
                         <p class="text-white-75 mr-xl-8 mt-2">
@@ -126,7 +126,7 @@ MAIN CONTENT LAYOUT
             <!-- Main Section -->
             <div class="hero-static col-lg-8 d-flex flex-column align-items-center bg-white">
                 <div class="p-3 w-100 d-lg-none text-center">
-                    <a class="link-fx font-w600 font-size-h3 text-dark" href="index.html">
+                    <a class="link-fx font-w600 font-size-h3 text-dark" href="../">
                         Climbing<span class="font-w400">Plan</span>
                     </a>
                 </div>
