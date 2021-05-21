@@ -1729,9 +1729,6 @@ MAIN CONTENT LAYOUT
                 </div>
                 <!-- END User Dropdown -->
 
-
-
-
             </div>
             <!-- END Right Section -->
         </div>
