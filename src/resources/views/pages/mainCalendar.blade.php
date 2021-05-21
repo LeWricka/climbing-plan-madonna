@@ -1,45 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-    <title>BEST CLIMBING TRAINING PROGRAMS</title>
-
-    <meta name="description"
-          content="OneUI - Bootstrap 4 Admin Template &amp; UI Framework created by pixelcave and published on Themeforest">
-    <meta name="author" content="pixelcave">
-    <meta name="robots" content="noindex, nofollow">
-
-    <!-- Open Graph Meta -->
-    <meta property="og:title" content="ClimbingPlan">
-    <meta property="og:site_name" content="ClimbingPlan">
-    <meta property="og:description"
-          content="BEST CLIMBING TRAINING PROGRAMS">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-
-    <!-- Icons -->
-    <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-    <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
-    <!-- END Icons -->
-
-    <!-- Stylesheets -->
-    <!-- Page JS Plugins CSS -->
-    @yield('css_before')
-    <link rel="stylesheet" href="{{asset('js/plugins/fullcalendar/main.min.css')}}">
-
-    <!-- Fonts and OneUI framework -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" id="css-main" href="{{ mix('/css/oneui.css') }}">
-@yield('css_after')
-<!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
-    <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/amethyst.min.css"> -->
-    <!-- END Stylesheets -->
-</head>
+<x-head/>
 <body>
 <!-- Page Container -->
 <!--
@@ -704,17 +665,7 @@ MAIN CONTENT LAYOUT
     <!-- END Main Container -->
 
     <!-- Footer -->
-    <footer id="page-footer" class="bg-body-light">
-        <div class="content py-3">
-            <div class="row font-size-sm">
-
-                <div class="col-sm-6 order-sm-1 py-1 text-center text-sm-left">
-                    <a class="font-w600" href="#" target="_blank">ClimbingPlan</a> &copy; <span
-                        data-toggle="year-copy"></span>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <x-footer/>
     <!-- END Footer -->
 
     <!-- Apps Modal -->
@@ -825,7 +776,7 @@ MAIN CONTENT LAYOUT
 
 <!-- Page JS Code -->
 <script>
-    var routines = {!! json_encode($routines) !!};
+    let routines = {!! json_encode($routines) !!};
 </script>
 
 <script src="{{asset('js/pages/calendar.min.js')}}"></script>
