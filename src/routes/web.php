@@ -19,9 +19,8 @@ Route::get('/', function () {
 
 // Example Routes
 Route::view('/landing', 'landing');
-Route::view('/login', 'pages.login');
 
-Route::match(['get', 'post'], '/dashboard', function(){
+Route::match(['get', 'post'], '/dashboard', function () {
     return view('dashboard');
 });
 Route::view('/pages/slick', 'pages.slick');
