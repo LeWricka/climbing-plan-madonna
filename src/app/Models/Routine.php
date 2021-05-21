@@ -8,14 +8,12 @@ class Routine
 {
     private string $name;
     private DateTime $start;
-    private DateTime $end;
     private string $color;
 
-    public function __construct(string $name, DateTime $start, DateTime $end, string $color)
+    public function __construct(string $name, DateTime $start, string $color)
     {
         $this->name = $name;
         $this->start = $start;
-        $this->end = $end;
         $this->color = $color;
     }
 
@@ -29,18 +27,13 @@ class Routine
         return $this->start;
     }
 
-    public function getEnd(): DateTime
-    {
-        return $this->end;
-    }
-
     public function getColor(): string
     {
         return $this->color;
     }
 
-    public function routineToJson()
+    public function routineToKeyValue()
     {
-        return ["title" => $this->getName(), "start" => $this->getStart()->format('Y-m-d'), "end" => $this->getEnd()->format('Y-m-d'), "color" => $this->getColor()];
+        return ["title" => $this->getName(), "start" => $this->getStart()->format('Y-m-d'), "color" => $this->getColor()];
     }
 }
