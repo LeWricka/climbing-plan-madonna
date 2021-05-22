@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CalendarController;
 /*
@@ -16,6 +17,8 @@ use App\Http\Controllers\CalendarController;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/users', UserController::class);
 
 // Example Routes
 Route::view('/landing', 'landing');
