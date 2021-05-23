@@ -1,12 +1,9 @@
 <?php
 
-namespace App\Models;
+namespace Core\Users\Domain;
 
-use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
 
 class LaravelUser extends Model
 {

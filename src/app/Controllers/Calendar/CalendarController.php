@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Controllers\Calendar;
 
-use App\Models\Routine;
+use Core\Routines\Domain\Routine;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 

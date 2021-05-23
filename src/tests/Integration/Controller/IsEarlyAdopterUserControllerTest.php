@@ -2,7 +2,7 @@
 
 namespace Tests\Integration\Controller;
 
-use App\Models\LaravelUser;
+use Core\Users\Domain\LaravelUser;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Response;
 use Tests\TestCase;

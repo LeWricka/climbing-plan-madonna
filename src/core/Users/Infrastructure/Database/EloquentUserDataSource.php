@@ -1,8 +1,8 @@
 <?php
 
-namespace App\DataSource\Database;
+namespace Core\Users\Infrastructure\Database;
 
-use App\Models\LaravelUser;
+use Core\Users\Domain\LaravelUser;
 use Exception;
 
 class EloquentUserDataSource

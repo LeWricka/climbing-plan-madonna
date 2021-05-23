@@ -2,9 +2,9 @@
 
 namespace Tests\Unit\Services\EarlyAdopter;
 
-use App\DataSource\Database\EloquentUserDataSource;
-use App\Models\LaravelUser;
 use App\Services\EarlyAdopter\IsEarlyAdopterService;
+use Core\Users\Domain\LaravelUser;
+use Core\Users\Infrastructure\Database\EloquentUserDataSource;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Prophet;
 

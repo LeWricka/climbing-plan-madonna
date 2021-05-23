@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Controllers\Calendar\CalendarController;
+use App\Controllers\Session\UserController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CalendarController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

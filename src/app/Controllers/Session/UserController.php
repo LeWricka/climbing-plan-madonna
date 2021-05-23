@@ -1,9 +1,8 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Controllers\Session;
 
-use App\DataSource\API\FirestoreApiDatasource;
-use App\Models\Routine;
+use Core\Routines\Infrastructure\API\FirestoreApiDatasource;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 

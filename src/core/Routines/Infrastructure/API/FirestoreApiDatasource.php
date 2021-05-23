@@ -1,6 +1,6 @@
 <?php
 
-namespace App\DataSource\API;
+namespace Core\Routines\Infrastructure\API;
 
 use Google\Cloud\Firestore\FirestoreClient;
 

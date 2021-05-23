@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\DataSource\Database\EloquentUserDataSource;
+use Core\Users\Infrastructure\Database\EloquentUserDataSource;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider

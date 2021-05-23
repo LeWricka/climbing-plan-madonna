@@ -2,7 +2,7 @@
 
 namespace App\Services\EarlyAdopter;
 
-use App\DataSource\Database\EloquentUserDataSource;
+use Core\Users\Infrastructure\Database\EloquentUserDataSource;
 use Exception;
 
 class IsEarlyAdopterService

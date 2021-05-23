@@ -2,8 +2,8 @@
 
 namespace Tests\Integration\DataSources;
 
-use App\DataSource\Database\EloquentUserDataSource;
-use App\Models\LaravelUser;
+use Core\Users\Domain\LaravelUser;
+use Core\Users\Infrastructure\Database\EloquentUserDataSource;
 use Exception;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
