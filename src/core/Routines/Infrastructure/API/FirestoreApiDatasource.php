@@ -19,7 +19,7 @@ class FirestoreApiDatasource
     {
         $this->firestoreClient = new FirestoreClient([
             'projectId' => 'madonna-312418',
-            'keyFile' => json_decode(file_get_contents(__DIR__.'/serviceAccount.json'), true)
+            'keyFile' => json_decode(file_get_contents(config_path('serviceAccount.json')), true)
         ]);
         printf('Created Cloud Firestore client with default project ID.' . PHP_EOL);
     }
