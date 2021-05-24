@@ -1,6 +1,7 @@
 <?php
 
 use App\Controllers\Calendar\CalendarController;
+use App\Controllers\DailySchedule\DailyScheduleController;
 use App\Controllers\Session\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,7 @@ Route::get('/users', UserController::class);
 
 // Example Routes
 Route::view('/landing', 'landing');
+Route::view('/login', 'pages.login');
 
 Route::match(['get', 'post'], '/dashboard', function () {
     return view('dashboard');
@@ -32,3 +34,4 @@ Route::view('/pages/datatables', 'pages.datatables');
 Route::view('/pages/blank', 'pages.blank');
 
 Route::get('/main', CalendarController::class);
+Route::get('/dailySchedule/{date}', DailyScheduleController::class);
