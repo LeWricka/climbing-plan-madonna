@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use Core\Users\Domain\LaravelUser;
+use Core\Users\Domain\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class UserFactory extends Factory
@@ -12,7 +12,7 @@ class UserFactory extends Factory
      *
      * @var string
      */
-    protected $model = LaravelUser::class;
+    protected $model = User::class;
 
     /**
      * Define the model's default state.

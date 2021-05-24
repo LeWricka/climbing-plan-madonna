@@ -2,7 +2,7 @@
 
 namespace Tests\Integration\Controller;
 
-use Core\Users\Domain\LaravelUser;
+use Core\Users\Domain\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Http\Response;
 use Tests\TestCase;
@@ -16,7 +16,7 @@ class IsEarlyAdopterUserControllerTest extends TestCase
      */
     public function noUserFoundForGivenEmail()
     {
-        LaravelUser::factory(LaravelUser::class)->create();
+        User::factory(User::class)->create();
 
         $response = $this->get('/api/user/another@email.com');
 
@@ -28,7 +28,7 @@ class IsEarlyAdopterUserControllerTest extends TestCase
      */
     public function userIsEarlyAdopter()
     {
-        LaravelUser::factory(LaravelUser::class)->create();
+        User::factory(User::class)->create();
 
         $response = $this->get('/api/user/email@email.com');
 

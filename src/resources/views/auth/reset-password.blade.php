@@ -88,10 +88,10 @@ MAIN CONTENT LAYOUT
     <!-- Main Container -->
     <main id="main-container">
         <!-- Page Content -->
-        <div class="bg-image" style="background-image: url({{('media/photos/leftSideImage.jpg')}});"/>
+        <div class="bg-image"
+             style="background-position: 0px 0px;background-size: cover; background-image: url({{('media/photos/leftSideImage.jpg')}});"/>
 
-        <div class="row no-gutters"
-             style="background-image: url('{{ asset('assets/images/leftSideImage.png')}}');">
+        <div class="row no-gutters">
             <!-- Meta Info Section -->
             <div class="hero-static col-lg-4 d-none d-lg-flex flex-column justify-content-center">
                 <div class="p-4 p-xl-5 flex-grow-1 d-flex align-items-center">
@@ -138,44 +138,74 @@ MAIN CONTENT LAYOUT
                                 <i class="fa fa-2x fa-circle-notch text-primary-light"></i>
                             </p>
                             <h1 class="font-w700 mb-2">
-                                Password Reminder
+                                Reset Password
                             </h1>
                             <h2 class="font-size-base text-muted">
-                                Please provide your account’s email and we will send you your password.
+                                Recover your access today in one easy step
                             </h2>
                         </div>
                         <!-- END Header -->
 
-                        <!-- Reminder Form -->
-                        <!-- jQuery Validation (.js-validation-reminder class is initialized in js/pages/op_auth_reminder.min.js which was auto compiled from _js/pages/op_auth_reminder.js) -->
+                        <!-- Sign Up Form -->
+                        <!-- jQuery Validation (.js-validation-signup class is initialized in js/pages/op_auth_signup.min.js which was auto compiled from _js/pages/op_auth_signup.js) -->
                         <!-- For more info and examples you can check out https://github.com/jzaefferer/jquery-validation -->
+
                         <div class="row no-gutters justify-content-center">
                             <div class="col-sm-8 col-xl-4">
-                                @if(session('status'))
-                                    <div class="alert alert-success" role="alert"> {{ session('status')}}</div>
-                                @endif
 
-                                <form method="POST" action="{{ route('password.request') }}">
+                                <form method="POST" action="{{ route('password.update') }}">
                                     @csrf
+                                    <input type="hidden" name="token" value="{{ $token }}">
+
                                     <div class="form-group">
-                                        <input type="text"
-                                               class="form-control form-control-lg form-control-alt py-4 @error('email') is-invalid @enderror"
-                                               id="email" name="email" placeholder="Email">
+
+                                        <input id="email" type="email"
+                                               class="form-control form-control-lg form-control-alt  @error('email') is-invalid @enderror"
+                                               name="email" value="{{ $email ?? old('email') }}" required
+                                               placeholder="Email"
+                                               autofocus
+                                               autocomplete="email">
+
                                         @error('email')
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
-                                        </span>
+                                    </span>
                                         @enderror
                                     </div>
+
+                                    <div class="form-group">
+
+                                        <input id="password" type="password"
+                                               class="form-control form-control-lg form-control-alt  @error('password') is-invalid @enderror"
+                                               name="password" placeholder="Password" required
+                                               autocomplete="new-password">
+
+                                        @error('password')
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                        @enderror
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <input id="password-confirm" type="password"
+                                               class="form-control form-control-lg form-control-alt "
+                                               name="password_confirmation" placeholder="Confirm Password" required
+                                               autocomplete="new-password">
+                                    </div>
+
                                     <div class="form-group text-center mb-0">
-                                        <button type="submit" class="btn btn-lg btn-alt-primary">
-                                            <i class="fa fa-fw fa-envelope mr-1 opacity-50"></i> Send Mail
+                                        <button type="submit" class="btn btn-lg btn-alt-success">
+                                            <i class="fa fa-fw fa-plus mr-1 opacity-50"></i> Reset Password
                                         </button>
                                     </div>
+
                                 </form>
+
                             </div>
                         </div>
-                        <!-- END Reminder Form -->
+                        <!-- END Sign Up Form -->
                     </div>
                 </div>
                 <div
@@ -205,6 +235,52 @@ MAIN CONTENT LAYOUT
 </div>
 <!-- END Page Container -->
 
+<!-- Terms Modal -->
+<div class="modal fade" id="one-signup-terms" tabindex="-1" role="dialog" aria-labelledby="one-signup-terms"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-popout" role="document">
+        <div class="modal-content">
+            <div class="block block-rounded block-themed block-transparent mb-0">
+                <div class="block-header bg-primary-dark">
+                    <h3 class="block-title">Terms &amp; Conditions</h3>
+                    <div class="block-options">
+                        <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-fw fa-times"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="block-content">
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                    <p>Dolor posuere proin blandit accumsan senectus netus nullam curae, ornare laoreet adipiscing
+                        luctus mauris adipiscing pretium eget fermentum, tristique lobortis est ut metus lobortis tortor
+                        tincidunt himenaeos habitant quis dictumst proin odio sagittis purus mi, nec taciti vestibulum
+                        quis in sit varius lorem sit metus mi.</p>
+                </div>
+                <div class="block-content block-content-full text-right border-top">
+                    <button type="button" class="btn btn-alt-primary mr-1" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">I Agree</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END Terms Modal -->
+
 <!--
     OneUI JS Core
 
@@ -220,6 +296,26 @@ MAIN CONTENT LAYOUT
     assets/js/core/jquery-scrollLock.min.js
     assets/js/core/jquery.appear.min.js
     assets/js/core/js.cookie.min.js
+-->
+<!--
+<script src="assets/js/oneui.core.min.js"></script>
+-->
+<!--
+    OneUI JS
+
+    Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+    webpack is putting everything together at assets/_js/main/app.js
+-->
+<!--
+<script src="assets/js/oneui.app.min.js"></script>
+-->
+<!-- Page JS Plugins -->
+<!--
+<script src="assets/js/plugins/jquery-validation/jquery.validate.min.js"></script>
+-->
+<!-- Page JS Code -->
+<!--
+<script src="assets/js/pages/op_auth_signup.min.js"></script>
 -->
 </body>
 </html>
