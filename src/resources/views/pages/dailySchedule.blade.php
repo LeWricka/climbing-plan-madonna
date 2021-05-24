@@ -524,7 +524,7 @@ MAIN CONTENT LAYOUT
             <div class="d-flex align-items-center">
                 <!-- Toggle Sidebar -->
                 <!-- Layout API, functionality initialized in Template._uiApiLayout()-->
-                <button type="button" class="btn btn-sm btn-dual mr-2" onclick="location.href='/main'">
+                <button type="button" class="btn btn-sm btn-dual mr-2" onclick="location.href='{{ route('calendar') }}'">
                     <i class="fa fa-fw fa-arrow-circle-left"></i>
                 </button>
                 <!-- END Toggle Sidebar -->

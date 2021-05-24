@@ -20,7 +20,7 @@
         <div class="content-side">
             <ul class="nav-main">
                 <li class="nav-main-item">
-                    <a class="nav-main-link" href="/main">
+                    <a class="nav-main-link" href="{{ route('calendar') }}">
                         <i class="nav-main-link-icon si si-calendar"></i>
                         <span class="nav-main-link-name">Calendar</span>
                     </a>
