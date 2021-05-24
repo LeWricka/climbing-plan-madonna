@@ -48,4 +48,3 @@
         <script src="{{asset('js/pages/calendar.min.js')}}"></script>
     @endsection
 @endsection
-<!-- END Page Container -->

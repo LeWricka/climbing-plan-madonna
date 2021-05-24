@@ -3,12 +3,11 @@
 @section('content')
     @parent
     <!-- Header -->
-    @section('button')
-        <button type="button" class="btn btn-sm btn-dual mr-2"
+                @section('button')<button type="button" class="btn btn-sm btn-dual mr-2"
                         onclick="location.href='{{ route('calendar') }}'">
-            <i class="fa fa-fw fa-arrow-circle-left"></i>
-        </button>
-    @endsection
+                    <i class="fa fa-fw fa-arrow-circle-left"></i>
+                </button>
+            @endsection
 
     <!-- END Header -->
 
@@ -57,5 +56,5 @@
         <!-- END Page Content -->
     @endsection
     <!-- END Main Container -->
+
 @endsection
-<!-- END Page Container -->
