@@ -6,7 +6,7 @@
 
     <meta name="description"
           content="BEST CLIMBING TRAINING PROGRAMS">
-    <meta name="author" content="pixelcave">
+    <meta name="author" content="ClimbingPlan">
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Open Graph Meta -->
