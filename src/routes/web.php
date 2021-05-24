@@ -1,10 +1,10 @@
 <?php
 
 use App\Controllers\Calendar\CalendarController;
+use App\Controllers\DailySchedule\DailyScheduleController;
 use App\Controllers\Session\UserController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\CalendarController;
-use App\Http\Controllers\DailyScheduleController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

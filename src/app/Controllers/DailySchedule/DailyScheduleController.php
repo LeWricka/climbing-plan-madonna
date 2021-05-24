@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Controllers\DailySchedule;
 
-use Illuminate\Routing\Controller;
-use App\Models\Routine;
+use Core\Routines\Domain\Routine;
 use DateTime;
+use Illuminate\Routing\Controller;
 
 class DailyScheduleController extends Controller
 {
