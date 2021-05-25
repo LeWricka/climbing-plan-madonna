@@ -155,7 +155,7 @@ MAIN CONTENT LAYOUT
                                     <div class="alert alert-success" role="alert"> {{ session('status')}}</div>
                                 @endif
 
-                                <form method="POST" action="{{ route('password.request') }}">
+                                <form method="POST" action="{{ route('password.email') }}">
                                     @csrf
                                     <div class="form-group">
                                         <input type="text"
