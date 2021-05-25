@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
-    <x-head/>
+    @include('components.head')
     <body>
         <div id="page-container"
              class="sidebar-o sidebar-dark enable-page-overlay side-scroll page-header-fixed main-content-narrow">
-            <x-navbar/>
-            <x-header/>
+            @include('components.navbar')
+            @include('components.header')
             <main id="main-container">
                 @yield('main')
             </main>
             @yield('content')
-            <x-footer/>
+            @include('components.footer')
         </div>
     </body>
 </html>
