@@ -21,4 +21,3 @@ Route::get('/', CalendarController::class)->name('calendar');
 Route::get('/users', UserController::class);
 Route::get('/dailySchedule/{date}', DailyScheduleController::class);
 Route::get('/routine/{id}', RoutineController::class);
-
