@@ -12,5 +12,10 @@
             @yield('content')
             @include('components.footer')
         </div>
+        @section('scripts')
+                <script src="{{asset('js/oneui.core.min.js')}}"></script>
+
+                <script src="{{asset('js/oneui.app.js')}}"></script>
+        @show
     </body>
 </html>

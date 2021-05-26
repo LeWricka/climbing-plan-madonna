@@ -3,6 +3,7 @@
 use App\Controllers\Calendar\CalendarController;
 use App\Controllers\DailySchedule\DailyScheduleController;
 use App\Controllers\Session\UserController;
+use App\Controllers\Routine\RoutineController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', CalendarController::class)->name('calendar');;
+Route::get('/', CalendarController::class)->name('calendar');
 Route::get('/users', UserController::class);
 Route::get('/dailySchedule/{date}', DailyScheduleController::class);
+Route::get('/routine/{id}', RoutineController::class);
+
