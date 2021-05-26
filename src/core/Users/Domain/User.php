@@ -7,28 +7,26 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class User extends Authenticatable
 {
     private string $email;
-    private String $password;
+    private string $password;
 
     public function __construct(string $email, string $password)
     {
-        $this->$email = $email;
-        $this->$password = $password;
-
+        $this->email = $email;
+        $this->password = $password;
     }
 
     public function getEmail(): string
     {
-        return $this->name;
+        return $this->email;
     }
 
-    public function setEmail(string $name): void
+    public function setEmail(string $email): void
     {
-        $this->name = $name;
+        $this->email = email;
     }
 
-    public function setPassword(String $start): void
+    public function setPassword(string $password): void
     {
-        $this->start = $start;
+        $this->password = password;
     }
-
 }
