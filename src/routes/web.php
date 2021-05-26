@@ -15,7 +15,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', CalendarController::class)->name('calendar');;
 Route::get('/users', UserController::class);
 Route::get('/dailySchedule/{date}', DailyScheduleController::class);
+//Route::middleware(['auth' ])->group(function () {
+    Route::get('/', CalendarController::class)->name('calendar');;
+//});
