@@ -35,22 +35,17 @@
         <!-- END Page Content -->
     @endsection
     <!-- END Main Container -->
-
-    <!-- Footer -->
-
-    <!-- END Footer -->
-
-    <!-- END Page Container -->
-@endsection
-    <script src="{{asset('js/oneui.core.min.js')}}"></script>
-
-    <script src="{{asset('js/oneui.app.js')}}"></script>
     <!-- Page JS Plugins -->
-    <script src="{{asset('js/plugins/fullcalendar/main.min.js')}}"></script>
+    @section('scripts')
+        @parent
+        <script src="{{asset('js/plugins/fullcalendar/main.min.js')}}"></script>
 
-    <!-- Page JS Code -->
-    <script>
-        let routines = {!! json_encode($routines) !!};
-    </script>
+        <!-- Page JS Code -->
+        <script>
+            let routines = {!! json_encode($routines) !!};
+        </script>
 
-    <script src="{{asset('js/pages/calendar.min.js')}}"></script>
+        <script src="{{asset('js/pages/calendar.min.js')}}"></script>
+    @endsection
+@endsection
+<!-- END Page Container -->

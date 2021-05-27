@@ -3,11 +3,12 @@
 @section('content')
     @parent
     <!-- Header -->
-                @section('button')<button type="button" class="btn btn-sm btn-dual mr-2"
+    @section('button')
+        <button type="button" class="btn btn-sm btn-dual mr-2"
                         onclick="location.href='{{ route('calendar') }}'">
-                    <i class="fa fa-fw fa-arrow-circle-left"></i>
-                </button>
-            @endsection
+            <i class="fa fa-fw fa-arrow-circle-left"></i>
+        </button>
+    @endsection
 
     <!-- END Header -->
 
@@ -35,7 +36,7 @@
                     @for ($i = 0; $i < count($routines); $i++)
                     <!-- Course -->
                         <div class="col-md-6 col-lg-4 col-xl-3">
-                            <a class="block block-rounded block-link-pop" href="">
+                            <a class="block block-rounded block-link-pop" href="/routine/{!!$routines[$i]->getId() !!}">
                                 <div class="block-content block-content-full text-center"
                                      style="background-color: {!! $routines[$i]->getColor() !!}">
                                     <div class="item item-2x item-circle bg-white-10 py-3 my-3 mx-auto invisible"
@@ -56,11 +57,5 @@
         <!-- END Page Content -->
     @endsection
     <!-- END Main Container -->
-
 @endsection
-
-    <!-- END Page Container -->
-    <script src="{{asset('js/oneui.core.min.js')}}"></script>
-
-    <script src="{{asset('js/oneui.app.js')}}"></script>
-
+<!-- END Page Container -->
