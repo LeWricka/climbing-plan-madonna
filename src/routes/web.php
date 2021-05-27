@@ -4,6 +4,7 @@ use App\Controllers\Calendar\CalendarController;
 use App\Controllers\DailySchedule\DailyScheduleController;
 use App\Controllers\Session\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Controllers\Account\myAccountController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/users', UserController::class);
+Route::get('/myAccount', myAccountController::class);
 Route::get('/dailySchedule/{date}', DailyScheduleController::class);
 //Route::middleware(['auth' ])->group(function () {
     Route::get('/', CalendarController::class)->name('calendar');;

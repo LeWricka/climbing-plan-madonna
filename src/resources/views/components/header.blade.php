@@ -41,7 +41,7 @@
                     </div>
                     <div class="p-2">
 
-                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                        <a class="dropdown-item d-flex align-items-center justify-content-between" href="/myAccount">
                             <span class="font-size-sm font-w500">My Account</span>
                         </a>
                         <div role="separator" class="dropdown-divider"></div>
