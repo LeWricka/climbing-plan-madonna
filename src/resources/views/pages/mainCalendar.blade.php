@@ -42,7 +42,14 @@
 
         <!-- Page JS Code -->
         <script>
-            let routines = {!! json_encode($routines) !!};
+            let routines = [];
+            @foreach($routines as $routine)
+                routines.push({
+                    "title":"{!! $routine->get('name') !!}",
+                    "start": "{!! date('Y-m-d', strtotime($routine->get('day') . " +1 days")) !!}"
+                });
+            @endforeach
+
         </script>
 
         <script src="{{asset('js/pages/calendar.min.js')}}"></script>
