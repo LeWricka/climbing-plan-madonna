@@ -60,8 +60,6 @@
     <!-- Page JS Plugins -->
     @section('scripts')
         @parent
-
-
         <!-- Page JS Helpers (Highlight.js Plugin) -->
         <script>jQuery(function () {
                 One.helpers('highlightjs');
