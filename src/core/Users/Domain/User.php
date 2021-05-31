@@ -2,31 +2,36 @@
 
 namespace Core\Users\Domain;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    private string $email;
-    private string $password;
+    use HasFactory, Notifiable;
 
-    public function __construct(string $email, string $password)
+    protected $fillable = [
+        'email', 'localId',
+    ];
+
+    public function getAuthIdentifierName()
     {
-        $this->email = $email;
-        $this->password = $password;
+        return 'localId';
     }
 
-    public function getEmail(): string
+    public function getAuthIdentifier()
     {
-        return $this->email;
+        return $this->localId;
     }
 
-    public function setEmail(string $email): void
-    {
-        $this->email = email;
-    }
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
 
-    public function setPassword(string $password): void
-    {
-        $this->password = password;
-    }
 }

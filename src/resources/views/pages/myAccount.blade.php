@@ -13,12 +13,11 @@
                         <div class="my-3">
                             <img class="img-avatar img-avatar-thumb" src="{{asset('media/avatars/avatar10.jpg')}}" alt="">
                         </div>
-                        <h1 class="h2 text-white mb-0">climberEmail</h1>
+                        <h1 class="h2 text-white mb-0">{{Auth::user()->email}}</h1>
                     </div>
                 </div>
             </div>
             <!-- END Hero -->
-
 
             <!-- END Stats -->
 

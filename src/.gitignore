@@ -3,6 +3,7 @@
 /public/storage
 /storage/*.key
 config/serviceAccount*
+js/firebaseAuth*
 /vendor
 .env
 .env.backup

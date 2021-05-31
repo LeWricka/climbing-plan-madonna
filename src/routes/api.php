@@ -25,3 +25,5 @@ Route::get(
 );
 
 Route::get('user/{email}', IsEarlyAdopterUserController::class);
+
+

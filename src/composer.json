@@ -15,9 +15,11 @@
         "goodnesskay/laravelpdfviewer": "^1.0",
         "google/cloud-firestore": "^1.19.2",
         "guzzlehttp/guzzle": "^7.0.1",
-        "laravel/fortify": "^1.7",
+        "kreait/firebase-tokens": "^1.15",
+        "kreait/laravel-firebase": "^3.1",
         "laravel/framework": "^8.12",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "laravel/ui": "^3.2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",
