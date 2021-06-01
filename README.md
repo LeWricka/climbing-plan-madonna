@@ -26,5 +26,8 @@ The project must be mounted using docker:
   
   - To stop de container:
     docker-compose stop
+    
+- Create a firebaseAuth.js in public/js/ and copy firebaseConfig script. We can get the data in settings / project configuration / 
+
 
 :)
