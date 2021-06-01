@@ -24,9 +24,8 @@ Auth::routes();
 Route::get('/', CalendarController::class)->name('calendar');
 Route::get('/users', UserController::class);
 Route::get('/myAccount', myAccountController::class);
-Route::get('/dailySchedule/{date}', DailyScheduleController::class);
-Route::get('/', CalendarController::class)->name('calendar');;
 Route::get('/forgotPassword', ForgotPasswordController::class);
 
 Route::post('login/{provider}/callback', 'Auth\LoginController@handleCallback');
+Route::get('/dailySchedule/{date}', DailyScheduleController::class);
 Route::get('/routine/{id}', RoutineController::class);
