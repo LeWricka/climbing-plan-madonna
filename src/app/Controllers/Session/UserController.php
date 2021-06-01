@@ -23,7 +23,7 @@ class UserController extends Controller
 
     public function __invoke(Request $request)
     {
-        $this->firestoreApiDatasource->getRoutines();
+        $this->firestoreApiDatasource->getAllRoutines();
 //        return view('pages/mainCalendar', ['routines' => $routines]);
     }
 }

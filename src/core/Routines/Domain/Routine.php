@@ -45,9 +45,4 @@ class Routine
     {
         return $this->pdf;
     }
-
-    public function routineToKeyValue()
-    {
-        return ["title" => $this->getName(), "start" => $this->getStart()->format('Y-m-d'), "color" => $this->getColor()];
-    }
 }

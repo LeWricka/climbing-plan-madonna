@@ -30,27 +30,27 @@
         <!-- Page Content -->
         <div class="content content-boxed">
             <div class="row row-deck py-4">
-                @if(count($routines) === 0)
+                @if($routines->isEmpty())
                     <h1 class="h2 mb-2">No routines scheduled</h1>
                 @else
-                    @for ($i = 0; $i < count($routines); $i++)
+                    @foreach($routines as $key=>$routine)
                     <!-- Course -->
                         <div class="col-md-6 col-lg-4 col-xl-3">
-                            <a class="block block-rounded block-link-pop" href="/routine/{!!$routines[$i]->getId() !!}">
+                            <a class="block block-rounded block-link-pop" href="/routine/{!! $routine->id() !!}">
                                 <div class="block-content block-content-full text-center"
-                                     style="background-color: {!! $routines[$i]->getColor() !!}">
+                                     style="background-color: #e04f1a">
                                     <div class="item item-2x item-circle bg-white-10 py-3 my-3 mx-auto invisible"
                                          data-toggle="appear" data-offset="50" data-class="animated fadeIn">
                                         <i class="fab fa-html5 fa-2x text-white-75"></i>
                                     </div>
                                 </div>
                                 <div class="block-content block-content-full">
-                                    <h4 class="h5 mb-1">Routine {{$i+1}}</h4>
+                                    <h4 class="h5 mb-1">Routine {{++$key}}</h4>
                                 </div>
                             </a>
                         </div>
                         <!-- END Course -->
-                    @endfor
+                    @endforeach
                 @endif
             </div>
         </div>
@@ -58,4 +58,3 @@
     @endsection
     <!-- END Main Container -->
 @endsection
-<!-- END Page Container -->

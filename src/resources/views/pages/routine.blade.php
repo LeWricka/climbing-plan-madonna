@@ -14,12 +14,12 @@
     <!-- Main Container -->
     @section('main')
     <!-- Hero Content -->
-    <div class="bg-image" style="background-image: url({{'media/photos/photo3@2x.jpg'}});">
+    <div class="bg-image" style="background-image: url({{'../media/photos/photo3@2x.jpg'}});">
         <div class="bg-primary-dark-op">
             <div class="content content-full overflow-hidden">
                 <div class="mt-7 mb-5 text-center">
                     <h1 class="h2 text-white mb-2 invisible" data-toggle="appear" data-class="animated fadeInDown">
-                        {!! $routine->getName() !!}</h1>
+                        {!!$routine->get('title') !!}</h1>
                 </div>
             </div>
         </div>
@@ -35,7 +35,7 @@
                 <!-- For more info and examples you can check out https://highlightjs.org/usage/ -->
                 <div class="block block-rounded">
                     <div class="block-content">
-                        <iframe src ="{{ url($routine->getPdf()) }}#zoom=FitH" height="500px" width="100%"></iframe>
+                        <iframe src ="{{ url($routine->get('pdf')) }}#zoom=FitH" height="500px" width="100%"></iframe>
                     </div>
                 </div>
                 <!-- END Lesson -->
