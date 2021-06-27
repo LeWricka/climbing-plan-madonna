@@ -37,21 +37,20 @@
     <!-- END Main Container -->
     <!-- Page JS Plugins -->
     @section('scripts')
-        @parent
-        <script src="{{asset('js/plugins/fullcalendar/main.min.js')}}"></script>
 
-        <!-- Page JS Code -->
-        <script>
-            let routines = [];
+@parent
+<script src="{{asset('js/plugins/fullcalendar/main.min.js')}}"></script>
+
+<!-- Page JS Code -->
+<script>
+    let routines = [];
             @foreach($routines as $routine)
                 routines.push({
                     "title":"{!! $routine->get('name') !!}",
                     "start": "{!! date('Y-m-d', strtotime($routine->get('day') . " +1 days")) !!}"
                 });
             @endforeach
+</script>
 
-        </script>
-
-        <script src="{{asset('js/pages/calendar.min.js')}}"></script>
-    @endsection
+<script src="{{asset('js/pages/calendar.min.js')}}"></script>@endsection
 @endsection

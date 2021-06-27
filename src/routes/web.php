@@ -5,7 +5,8 @@ use App\Controllers\DailySchedule\DailyScheduleController;
 use App\Controllers\Session\UserController;
 use App\Controllers\Routine\RoutineController;
 use Illuminate\Support\Facades\Route;
-
+use App\Controllers\Account\myAccountController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +18,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Auth::routes();
+
+
 Route::get('/', CalendarController::class)->name('calendar');
 Route::get('/users', UserController::class);
+Route::get('/myAccount', myAccountController::class);
+Route::get('/forgotPassword', ForgotPasswordController::class);
+
+Route::post('login/{provider}/callback', 'Auth\LoginController@handleCallback');
 Route::get('/dailySchedule/{date}', DailyScheduleController::class);
 Route::get('/routine/{id}', RoutineController::class);

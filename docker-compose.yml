@@ -38,6 +38,22 @@ services:
     networks:
       - madonna
 
+
+  mailhog_server:
+    image: mailhog/mailhog
+    container_name: madonna-mailhog
+    #this is optional
+    tty: true
+    ports:
+      - '1025:1025'
+      - '8025:8025'
+    #this is optional
+    #restart: always
+    restart: on-failure
+    #set the same network as the other services
+    networks:
+      - madonna
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: madonna-phpmyadmin
@@ -71,3 +87,5 @@ services:
 volumes:
   mysql:
     driver: local
+
+

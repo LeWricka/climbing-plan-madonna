@@ -61,7 +61,7 @@
                             ClimbingPlan
                         </a>
                         <p class="text-white-75 mr-xl-8 mt-2">
-                            Improve your climbing with the best climbing trainning programs
+                            Improve your climbing with the best climbing training programs
                         </p>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
 
                         <div class="row no-gutters justify-content-center">
                             <div class="col-sm-8 col-xl-4">
-                                <form action="{{ route('login') }}" method="POST">
+                                <form method="POST" action="{{ route('login') }}">
                                     @csrf
 
                                     <div class="form-group">
@@ -152,7 +152,7 @@
                                     <div class="form-group d-flex justify-content-between align-items-center">
                                         <div>
                                             <a class="text-muted font-size-sm font-w500 d-block d-lg-inline-block mb-1"
-                                               href="op_auth_reminder3.html">
+                                               href="forgotPassword">
                                                 Forgot Password?
                                             </a>
                                         </div>
@@ -196,23 +196,13 @@
 <!-- END Main Container -->
 </div>
 <!-- END Page Container -->
-
-<!--
-    OneUI JS Core
-
-    Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
-    to handle those dependencies through webpack. Please check out assets/_js/main/bootstrap.js for more info.
-
-    If you like, you could also include them separately directly from the assets/js/core folder in the following
-    order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
-
-    assets/js/core/jquery.min.js
-    assets/js/core/bootstrap.bundle.min.js
-    assets/js/core/simplebar.min.js
-    assets/js/core/jquery-scrollLock.min.js
-    assets/js/core/jquery.appear.min.js
-    assets/js/core/js.cookie.min.js
--->
-
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-auth.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="{{asset('js/firebaseAuth.js')}}"></script>
 </body>
 </html>

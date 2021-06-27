@@ -1,5 +1,7 @@
 <?php
 
+use Core\Users\Domain\User;
+
 return [
 
     /*
@@ -38,7 +40,7 @@ return [
     'guards' => [
         'web' => [
             'driver' => 'session',
-            'provider' => 'users',
+            'provider' => 'firebaseUser',
         ],
 
         'api' => [
@@ -66,9 +68,9 @@ return [
     */
 
     'providers' => [
-        'users' => [
-            'driver' => 'eloquent',
-            'model' => \Core\Users\Domain\LaravelUser::class,
+        'firebaseUser' => [
+            'driver' => 'firebaseuserprovider',
+            'model' => User::class,
         ],
 
         // 'users' => [
@@ -76,6 +78,7 @@ return [
         //     'table' => 'users',
         // ],
     ],
+
 
     /*
     |--------------------------------------------------------------------------
